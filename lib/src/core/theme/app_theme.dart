@@ -74,7 +74,7 @@ class AppTheme {
       ),
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: _backgroundDark,
-        indicatorColor: _primaryPurple.withOpacity(0.2),
+        indicatorColor: _primaryPurple.withValues(alpha: 0.2),
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
         iconTheme: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {

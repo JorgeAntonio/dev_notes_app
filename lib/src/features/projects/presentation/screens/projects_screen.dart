@@ -165,7 +165,7 @@ class ProjectCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF1E1E1E),
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -174,7 +174,7 @@ class ProjectCard extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
+              color: color.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(icon, color: color),
@@ -209,10 +209,10 @@ class ProjectCard extends StatelessWidget {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: (statusColor ?? color).withOpacity(0.1),
+                        color: (statusColor ?? color).withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
-                          color: (statusColor ?? color).withOpacity(0.2),
+                          color: (statusColor ?? color).withValues(alpha: 0.2),
                         ),
                       ),
                       child: Text(
@@ -232,7 +232,7 @@ class ProjectCard extends StatelessWidget {
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.05),
+                          color: Colors.white.withValues(alpha: 0.05),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
@@ -289,7 +289,7 @@ class ProjectCard extends StatelessWidget {
                   ),
                 ),
                 progressColor: color,
-                backgroundColor: color.withOpacity(0.1),
+                backgroundColor: color.withValues(alpha: 0.1),
                 circularStrokeCap: CircularStrokeCap.round,
               ),
             ],

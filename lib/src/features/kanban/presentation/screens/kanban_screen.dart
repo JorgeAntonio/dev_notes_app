@@ -188,7 +188,7 @@ class KanbanScreen extends ConsumerWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
             decoration: BoxDecoration(
               color: isSelected
-                  ? const Color(0xFF8B5CF6).withOpacity(0.2)
+                  ? const Color(0xFF8B5CF6).withValues(alpha: 0.2)
                   : Colors.white10,
               borderRadius: BorderRadius.circular(12),
             ),
@@ -251,7 +251,7 @@ class KanbanCard extends StatelessWidget {
                   vertical: 4,
                 ),
                 decoration: BoxDecoration(
-                  color: tagColor.withOpacity(0.1),
+                  color: tagColor.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text(

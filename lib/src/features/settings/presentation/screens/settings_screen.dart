@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+
 import '../../../../core/routing/routes.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -27,12 +28,12 @@ class SettingsScreen extends ConsumerWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: const Color(0xFF8B5CF6).withOpacity(0.5),
+                        color: const Color(0xFF8B5CF6).withValues(alpha: 0.5),
                         width: 2,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF8B5CF6).withOpacity(0.2),
+                          color: const Color(0xFF8B5CF6).withValues(alpha: 0.2),
                           blurRadius: 20,
                           spreadRadius: 5,
                         ),
@@ -150,12 +151,14 @@ class SettingsScreen extends ConsumerWidget {
                 },
                 style: OutlinedButton.styleFrom(
                   foregroundColor: Colors.redAccent,
-                  side: BorderSide(color: Colors.redAccent.withOpacity(0.2)),
+                  side: BorderSide(
+                    color: Colors.redAccent.withValues(alpha: 0.2),
+                  ),
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  backgroundColor: Colors.redAccent.withOpacity(0.05),
+                  backgroundColor: Colors.redAccent.withValues(alpha: 0.05),
                 ),
                 child: const Text('Log Out'),
               ),
@@ -212,7 +215,7 @@ class SettingsScreen extends ConsumerWidget {
       leading: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: iconColor.withOpacity(0.1),
+          color: iconColor.withValues(alpha: 0.1),
           shape: BoxShape.circle,
         ),
         child: Icon(icon, color: iconColor, size: 20),
@@ -242,7 +245,7 @@ class SettingsScreen extends ConsumerWidget {
       leading: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: iconColor.withOpacity(0.1),
+          color: iconColor.withValues(alpha: 0.1),
           shape: BoxShape.circle,
         ),
         child: Icon(icon, color: iconColor, size: 20),
@@ -251,7 +254,7 @@ class SettingsScreen extends ConsumerWidget {
       trailing: Switch(
         value: value,
         onChanged: onChanged,
-        activeColor: Colors.white,
+        activeThumbColor: Colors.white,
         activeTrackColor: const Color(0xFF3B82F6), // Blue as per image
       ),
     );
