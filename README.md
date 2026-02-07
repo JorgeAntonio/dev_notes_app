@@ -26,4 +26,11 @@ DevFocus is a high-fidelity productivity application designed specifically for e
 
 ## Screenshots
 
-*(Placeholders for screenshots of Auth, Dashboard, Kanban, Notes, and Settings screens)*
+Project dashboard:
+![Projects](assets/captures/projects.png)
+
+Kanban board:
+![Tasks](assets/captures/tasks.png)
+
+Notes editor:
+![Notes](assets/captures/notes.png)

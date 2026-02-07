@@ -98,7 +98,12 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   onPressed: () {
                     context.go(Routes.projects.path);
                   },
-                  icon: const Icon(Icons.code, color: Colors.white),
+                  icon: Image.asset(
+                    'assets/icons/github_logo.png',
+                    width: 32,
+                    height: 32,
+                    color: Colors.white,
+                  ),
                   label: const Padding(
                     padding: EdgeInsets.symmetric(vertical: 16.0),
                     child: Text(
@@ -116,7 +121,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                 ),
               ),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: 32),
 
               // Small note
               Align(
