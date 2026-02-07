@@ -190,47 +190,52 @@ class NotesScreen extends ConsumerWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
         decoration: const BoxDecoration(
           color: Color(0xFF1E1E1E),
-          border: Border(top: BorderSide(color: Colors.white10)),
+          border: Border(
+            top: BorderSide(color: Color.fromARGB(26, 100, 84, 84)),
+          ),
         ),
         child: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.format_bold, color: Colors.grey),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.format_italic, color: Colors.white),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.code, color: Colors.grey),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.data_object, color: Colors.grey),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.link, color: Colors.grey),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.format_list_bulleted,
-                  color: Colors.grey,
+          child: SizedBox(
+            height: 48,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.format_bold, color: Colors.grey),
                 ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.format_quote, color: Colors.grey),
-              ),
-            ],
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.format_italic, color: Colors.white),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.code, color: Colors.grey),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.data_object, color: Colors.grey),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.link, color: Colors.grey),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.format_list_bulleted,
+                    color: Colors.grey,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.format_quote, color: Colors.grey),
+                ),
+              ],
+            ),
           ),
         ),
       ),
